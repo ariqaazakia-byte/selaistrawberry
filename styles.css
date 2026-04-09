@@ -1,0 +1,21 @@
+/* Place your CSS styles in this file */
+
+h1 {
+    text-align: center;
+    font-family: "Source Times Ne", 'Times New Roman', Times, serif;
+    font-weight: bold ;
+    color:brown ;
+}
+body {background-color:cornsilk; 
+      border:4px solid brown;
+      border-radius: 12px;
+}
+
+.p1 {text-align: center;
+     color:palevioletred;}
+
+UL {list-style-type:none;
+background-color:cornsilk;
+border: 4px solid brown;}
+
+Li {display:inline;}
