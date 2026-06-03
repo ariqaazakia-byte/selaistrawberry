@@ -1,14 +1,85 @@
 /* Place your CSS styles in this file */
 
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+    margin:0;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:100vh;
+}
+
+
+.header{
+	width: 100%;
+	height: 80px;
+	display: block;
+	background-color: maroon;
+}
+
+.inner_header{
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	background-color: darkred;
+}
+
+.logo_png{
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.logo_png img{
+    	width: 70px;   
+    	height: 70px;
+    	margin-right: 15px;
+}
+
+.logo_png h1{
+	color: white;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: "Times New Roman";
+	font-size: 32px;
+	font-weight: 200;
+}
+
+.logo_png h1{
+	font-weight: 800;
+}
+
+.navigation{
+	float: right;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+.navigation li{
+	margin-left: 20px;
+
+.navigation li a href{
+	color: cornsilk;
+	text-decoration: none;
+	font-size: 25px;
+}
+
 h1 {
-    text-align: center;
+    text-align: left;
     font-family: "Source Times Ne", 'Times New Roman', Times, serif;
     font-weight: bold ;
-    color:brown ;
-}
-body {background-color:cornsilk; 
-      border:4px solid brown;
-      border-radius: 12px;
+    color: white;
 }
 
 img {
@@ -21,3 +92,30 @@ background-color:cornsilk;
 border: 4px solid brown;}
 
 Li {display:inline;}
+
+p {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Times New Roman;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Source Times Ne", 'Times New Roman', Times, serif;
+    font-weight: bold ;
+    color:darkred ;
+}
+
+button {
+	background-color: pink;
+	transition:.3s ease all;	
+}
+
+button: hover{
+	background-color: darkred;
+	transition:.3s ease all;
+	transform: translate Y(-5px);
+}
+
+
+	
