@@ -12,25 +12,185 @@
     </head>
 
     <body>
-	
-	<div class="header">
-		<div class="inner_header">
-		<div class="logo_png">
-			<img src="logo.png" alt="Logo">
-			<h1> Selai Strawberry<span></span></h1>
-		</div>
 
-	<ul class="navigation">
+        <h2> Detektor Mood Music </h2>
+        <ul>
             <li> <a href= "index.html"> Home </a> </li>
             <li> <a href= "Design.html"> Design </a>  </li>
             <li> Product </li>
 	</ul>
-	</div>
 	
-	<main> 
-	<a href="https://colab.research.google.com/drive/14nB-mYB8LuTED6a2IyJSePwIHZqVmc9Q?authuser=1#scrollTo=xvwtWIkhHbGY&line=11&uniqifier=1"> <button> Buka di google colab </button> 	</a>.
+	<!DOCTYPE html>
+<html>
+<head>
+    <title>MoodMatch</title>
 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
 
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color:cornsilk;
+            padding:20px;
+        }
+
+        .card{
+            width:400px;
+            padding:30px;
+            border-radius:25px;
+            background:rgba(255,255,255,0.1);
+            backdrop-filter:blur(15px);
+            text-align:center;
+            color:brown;
+            box-shadow:0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            margin-bottom:10px;
+            font-size:2rem;
+        }
+
+        p{
+            margin-bottom:20px;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:15px;
+            margin-bottom:15px;
+            font-size:16px;
+        }
+
+        button{
+            border:none;
+            padding:12px 25px;
+            border-radius:30px;
+            cursor:pointer;
+            color:white;
+            font-weight:bold;
+            background:linear-gradient(90deg,#8b5cf6,#ec4899);
+        }
+
+        button:hover{
+            transform:scale(1.05);
+        }
+
+        #hasil{
+            margin-top:25px;
+        }
+
+        iframe{
+            margin-top:15px;
+            border-radius:12px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="card">
+
+    <h1>🎧 MoodMatch</h1>
+
+    <p>What's your vibe today? ✨</p>
+
+    <input type="text" id="mood"
+    placeholder="senang / sedih / semangat / santai">
+
+    <button onclick="cekMood()">
+        ✨ Find My Playlist
+    </button>
+
+    <div id="hasil"></div>
+
+</div>
+
+<script>
+
+function cekMood(){
+
+    let mood =
+    document.getElementById("mood").value.toLowerCase();
+
+    if(mood=="senang"){
+
+        document.getElementById("hasil").innerHTML=`
+        <h2>😊 Mood Senang</h2>
+        <p>Doing what you love is never a waste of time.</p>
+
+        <iframe
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdPec7aLTmlC"
+        width="100%"
+        height="152"
+        frameborder="0">
+        </iframe>
+
+	<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0RH319xCjeU8VyTSqCF6M4?utm_source=generator" width="100%" height="152" 	frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+	</iframe>
+        `;
+    }
+
+    else if(mood=="sedih"){
+
+        document.getElementById("hasil").innerHTML=`
+        <h2>😔 Mood Sedih</h2>
+        <p>Every storm runs out of rain.</p>
+	<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIfAoIM3ht61G?utm_source=generator" width="100%" height="152" 	frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+	</iframe>
+	<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIg85EO6f7KwU?utm_source=generator" width="100%" height="152" 	frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+	</iframe>
+        `;
+    }
+
+    else if(mood=="semangat"){
+
+        document.getElementById("hasil").innerHTML=`
+        <h2>🔥 Mood Semangat</h2>
+        <p>Be stronger than your excuses.</p>
+	<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIcR2lz2y6VR8?utm_source=generator" width="100%" height="152" 	frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+	</iframe>
+	<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIfXONMY9xS1u?utm_source=generator" width="100%" height="152" 	frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+	</iframe>
+        `;
+    }
+
+    else if(mood=="santai"){
+
+        document.getElementById("hasil").innerHTML=`
+        <h2>🌙 Mood Santai</h2>
+        <p>Slow down. Good things take time.</p>
+	<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/26Zi3qLKC9cAWDs7wbbSzc?utm_source=generator" width="100%" height="152" 	frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+	</iframe>
+	<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIfeeY1Nyg89M?utm_source=generator" width="100%" height="152" 	frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+	</iframe>
+        `;
+    }
+
+    else{
+
+        document.getElementById("hasil").innerHTML=`
+        <h2>🤔 Mood Tidak Ditemukan</h2>
+        <p>Coba masukkan mood yang tersedia.</p>
+        `;
+    }
+}
+
+</script>
+
+</body>
+
+<a href="https://colab.research.google.com/drive/14nB-mYB8LuTED6a2IyJSePwIHZqVmc9Q?authuser=1#scrollTo=xvwtWIkhHbGY&line=11&uniqifier=1"> <button> Buka di google colab </button> 	</a>.
+
+</html>
 	  <marquee>Design by ariqa zakia rahma</marquee>
           </body>
 
