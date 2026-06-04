@@ -5,15 +5,18 @@
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
+	font-family:'Poppins',sans-serif;
 }
 
 body {
-    margin:0;
-    background-image: url("background.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height:100vh;
+   	margin:0;
+    	background-image: url("background.jpeg");
+    	background-size: cover;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	min-height:100vh;
+	cursor: url("strawberry.png") 16 16, auto;
+
 }
 
 
@@ -120,6 +123,17 @@ pre {
     color: black;
 }
 
+ button{
+        border:none;
+        padding:12px 25px;
+        border-radius:30px;
+        cursor:pointer;
+        color:white;
+        font-weight:bold;
+        background-color: maroon;
+}
+
+
 h2 {
     text-align: center;
     font-family: "Source Times Ne", 'Times New Roman', Times, serif;
@@ -127,15 +141,12 @@ h2 {
     color:darkred ;
 }
 
-button {
-	background-color: pink;
-	transition:.3s ease all;	
-}
-
-button: hover{
-	background-color: darkred;
-	transition:.3s ease all;
-	transform: translate Y(-5px);
+@media (max-width: 600px){
+.container{
+	width: 90%
+	margin: 20px auto;
+	padding: 30px;
+	text-size: 10px
 }
 
 
