@@ -215,9 +215,6 @@ h2 {
 	text-size: 14px;
         text-align: justify;
 }
-.grup-wrapper{
-        grid-template-columns: 1fr;
-}
 .container-grup{
         width: 100%;
 }
