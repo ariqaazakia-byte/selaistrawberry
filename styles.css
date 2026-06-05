@@ -207,18 +207,34 @@ h2 {
     color:darkred ;
 }
 
-@media (max-width: 600px){
-.container-deskripsi{
-	width: 95%
-	margin: 10px auto;
-	padding: 15px;
-	text-size: 14px;
-    text-align: justify;
-}
-.container-grup{
+@media screen and (max-width: 768px){
+    .navigation{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation li{
+        font-size: 14px;
+        padding: 8px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .logo img{
+        width: 80px;
+        height: auto;
+    }
+    .container-deskripsi{
+        width: 90%;
+        margin: 15px auto;
+    }
+    iframe, img{
+        width: 100%;
+        height: auto;
+    }
+   .container-grup{
     width: 100%;
 	grid-template-columns:1fr
-}
+    }
 
 }
 
