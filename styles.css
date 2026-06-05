@@ -136,7 +136,7 @@ Li {display:inline;}
 	font-family: Poppins;
 }
 
-.team-container{
+.card{
       width:1000px;
       padding:30px;
       border-radius:25px;
@@ -146,7 +146,12 @@ Li {display:inline;}
       color:maroon;
       box-shadow:0 8px 30px rgba(0,0,0,0.3);
 }
-
+.container-grup{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
 .card-grup{
     background-color: #ffe4e1;
     width: 320px;
