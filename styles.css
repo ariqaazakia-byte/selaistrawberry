@@ -46,12 +46,19 @@ body {
     	margin-right: 15px;
 }
 
+@font-face {
+    font-family: 'angelica';
+    src: url('angelica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .logo_png h1{
 	color: white;
 	height: 100%;
 	display: table-cell;
 	vertical-align: middle;
-	font-family: "angelica";
+	font-family: angelica;
 	font-size: 32px;
 	font-weight: 200;
 }
@@ -76,13 +83,6 @@ body {
 	cursor: url ("berry.png"), pointer;
 	text-decoration: none;
 	font-size: 25px;
-}
-
-@font-face {
-    font-family: 'angelica';
-    src: url('angelica.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 .header-container{
@@ -160,13 +160,13 @@ Li {display:inline;}
 }
 
 .card-grup h3{
-	font-family: "Poppins";
+	font-family: Poppins;
 	font-size: 12 px;
 	font-weight: bold;
 }
 
 .card-grup p{
-	font-family: "Poppins";
+	font-family: Poppins;
 	font-size: 10 px;
 }
 
