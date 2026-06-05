@@ -296,20 +296,17 @@ h2 {
     }
 	
    .container-grup{
-    	width: 70%;
-		grid-template-columns: 1fr;
-		justify-items:stretch;
-		gap:15px;
-	    display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+	}
 
 	.card-grup{
-        width:90%;
-        margin:15px auto;
-    }
-
+    width:85%;
+    margin:15px auto;
+    box-sizing:border-box;
+	}
 }
 
 
