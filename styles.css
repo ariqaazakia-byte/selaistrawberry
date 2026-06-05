@@ -238,9 +238,10 @@ h2 {
     }
 
     .navigation{
-        flex-direction: column;
-        align-items: center;
-    }
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+	}
 	
     .navigation li{
         font-size: 14px;
@@ -264,6 +265,15 @@ h2 {
     .container-deskripsi{
         width: 90%;
         margin: 15px auto;
+    }
+
+	.container-deskripsi h2{
+        font-size:24px;
+    }
+
+	.container-deskripsi p{
+        font-size:16px;
+        line-height:1.8;
     }
 	
     iframe, {
