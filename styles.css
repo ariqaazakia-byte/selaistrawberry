@@ -100,8 +100,8 @@ h1 {
 }
 
 img {
-     width: 200px;       
-     height: 200px;
+     max-width: 100%;       
+     height: auto;
 }      
 
 UL {
@@ -195,16 +195,34 @@ h2 {
 
 @media screen and (max-width: 768px){
 	.header{
-        height:60px;
+        height: auto;
+		padding: 10px 0;
     }
 	
 	.inner_header{
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
-        align-items: right;
-        height: auto;
-        padding: 10px 0;
+        align-items: center;
+        margin: auto;
+    }
+
+	.logo_png{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        float:none;
+    }
+	
+	.logo_png img{
+        width: 40px;
+        height: 40px;
+        margin-right:10px;
+    }
+
+	.logo_png h1{
+        font-size: 18px;
+		color: white;
     }
 	
 	.header-container h1{
@@ -213,41 +231,34 @@ h2 {
 	}
 	
 	.header-container img{
-    width: 80px;
+    width: 180px;
     height: auto;
 	}
 	
 	.header-container{
+        display: flex;
         flex-direction: row;
-        justify-content: left;
-        gap: 15px;
-    }
-	.header-container h1{
-        font-size:35px;
-        white-space:nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
     }
 	
-	.logo_png{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        float:none;
-    }
-
-    .logo_png img{
-        width: 50px;
-        height: 50px;
-        margin-right:10px;
-    }
-
-    .logo_png h1{
-        font-size:18px;
+	.header-container h1{
+        font-size: 42px;
+        white-space:nowrap;
+		margin:0;
     }
 
     .navigation{
-    display:flex;
-    flex-direction:row;
-    gap:15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+	justify-content:center;
+    gap:20px;
+    margin-top:10px;
+    height:auto;
+    float:none;
 	}
 	
     .navigation li{
@@ -264,24 +275,19 @@ h2 {
         height: auto;
     }
 	
-	.header-container img{
-    width:250px;
-    height:auto;
-	}
-	
     .container-deskripsi{
-        width: 70%;
+        width: 85%;
         margin: 15px auto;
-		justify-content: center;
     }
 
 	.container-deskripsi h2{
-        font-size:24px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 
 	.container-deskripsi p{
-        font-size:16px;
-        line-height:1.8;
+        font-size: 14px;
+        line-height: 1.6;
     }
 	
     iframe, {
