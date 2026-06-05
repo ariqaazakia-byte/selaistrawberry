@@ -136,16 +136,6 @@ Li {display:inline;}
 	font-family: Poppins;
 }
 
-.card{
-      width:1000px;
-      padding:30px;
-      border-radius:25px;
-      background:rgba(255,255,255,0.1);
-      backdrop-filter:blur(15px);
-      text-align:center;
-      color:maroon;
-      box-shadow:0 8px 30px rgba(0,0,0,0.3);
-}
 .container-grup{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -213,30 +203,57 @@ h2 {
         height: auto;
         padding: 10px 0;
     }
-	
+	 .logo_png{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        float:none;
+    }
+
+    .logo_png img{
+        width:50px;
+        height:50px;
+        margin-right:10px;
+    }
+
+    .logo_png h1{
+        font-size:20px;
+    }
+
     .navigation{
         flex-direction: column;
         align-items: center;
     }
+	
     .navigation li{
         font-size: 14px;
         padding: 8px;
     }
+	
     h1{
         font-size: 28px;
     }
+	
     .logo img{
         width: 40px;
         height: auto;
     }
+	
+	.header-container img{
+    width:250px;
+    height:auto;
+	}
+	
     .container-deskripsi{
         width: 90%;
         margin: 15px auto;
     }
-    iframe, img{
+	
+    iframe, {
         width: 100%;
         height: auto;
     }
+	
    .container-grup{
     width: 100%;
 	grid-template-columns:1fr
