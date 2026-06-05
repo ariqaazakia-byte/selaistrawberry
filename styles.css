@@ -305,6 +305,11 @@ h2 {
         align-items:center;
     }
 
+	.card-grup{
+        width:90%;
+        margin:15px auto;
+    }
+
 }
 
 
