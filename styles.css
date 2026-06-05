@@ -147,15 +147,6 @@ Li {display:inline;}
       box-shadow:0 8px 30px rgba(0,0,0,0.3);
 }
 
-.grup-wrapper{
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 900px;
-    margin: 30px auto;
-}
-
 .card-grup{
     background-color: #ffe4e1;
     width: 320px;
@@ -221,7 +212,7 @@ h2 {
         font-size: 28px;
     }
     .logo img{
-        width: 80px;
+        width: 40px;
         height: auto;
     }
     .container-deskripsi{
