@@ -300,13 +300,6 @@ h2 {
 	grid-template-columns:1fr
 	justify-items: center;
     }
-	
-	.card-grup{
-        width:90%;
-        margin:15px auto;
-        padding:15px;
-        box-sizing:border-box;
-    }
 
 }
 
