@@ -203,7 +203,24 @@ h2 {
         height: auto;
         padding: 10px 0;
     }
-	 .logo_png{
+	
+	.header-container h1{
+    font-size: 55px;
+    white-space: nowrap;
+	}
+	
+	.header-container img{
+    width: 100px;
+    height: auto;
+	}
+	
+	.header-container{
+        flex-direction: row;
+        justify-content: left;
+        gap: 15px;
+    }
+	
+	.logo_png{
         display:flex;
         align-items:center;
         justify-content:center;
