@@ -298,6 +298,7 @@ h2 {
    .container-grup{
     width: 70%;
 	grid-template-columns:1fr
+	justify-content: center;
     }
 
 }
