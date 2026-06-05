@@ -131,12 +131,12 @@ Li {display:inline;}
 	font-size: 16px;
    	line-height: 1.7;     
 	margin-bottom: 20px;  
-    	text-align: justify
+    text-align: justify;
 	color: black;
 	font-family: Poppins;
 }
 
-.card{
+.team-container{
       width:1000px;
       padding:30px;
       border-radius:25px;
@@ -165,18 +165,18 @@ Li {display:inline;}
     justify-content: center;
 }
 
-.container-grup h3{
+.card-grup h3{
 	font-family: "Poppins";
 	font-size: 12 px;
 	font-weight: bold;
 }
 
-.container-grup p{
+.card-grup p{
 	font-family: "Poppins";
 	font-size: 10 px;
 }
 
-.container-grup:hover{
+.card-grup:hover{
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
