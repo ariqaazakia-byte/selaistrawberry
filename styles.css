@@ -298,7 +298,14 @@ h2 {
    .container-grup{
     width: 70%;
 	grid-template-columns:1fr
-	justify-content: center;
+	justify-items: center;
+    }
+	
+	.card-grup{
+        width:90%;
+        margin:15px auto;
+        padding:15px;
+        box-sizing:border-box;
     }
 
 }
