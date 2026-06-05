@@ -175,6 +175,38 @@ Li {display:inline;}
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+.design-container{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:30px;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+.design-card{
+    background:#fff;
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.design-card h2{
+    color:#c84f8b;
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.design-card p{
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.design-card{
+    max-width:500px;
+    margin:30px auto;
+}
+
  button{
         border:none;
         padding:12px 25px;
@@ -308,6 +340,27 @@ h2 {
     margin:15px auto;
     box-sizing:border-box;
 	}
+	.design-container{
+        grid-template-columns:1fr;
+        width:90%;
+        margin:30px auto;
+    }
+
+    .design-card{
+        padding:25px;
+    }
+
+    .design-card h2{
+        font-size:1.5rem;
+    }
+
+    .design-card p{
+        font-size:1rem;
+    }
+
+    .design-card{
+        width:90%;
+    }
 }
 
 
